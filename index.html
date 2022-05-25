@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bài tập tính tiền cáp</h3>
+      <select
+        class="form-select my-3"
+        id="object"
+        aria-label="Default select example"
+        onchange="toggleObject()"
+      >
+        <option selected>Nhấp vào để chọn đối tượng</option>
+        <option value="A">Nhà Dân</option>
+        <option value="B">Doanh Nghiệp</option>
+      </select>
+      <div class="my-3 row">
+        <label for="userID" class="form-label">Mã khách hàng</label>
+        <input
+          type="text"
+          class="form-control col-xl-4 mt-6 col my-3"
+          name=""
+          id="userID"
+          aria-describedby="helpId"
+          placeholder=""
+        />
+
+        <label for="premiumChannel" class="form-label">Số kênh cao cấp</label>
+        <input
+          type="number"
+          class="form-control col-xl-4 mt-6 col my-3"
+          name=""
+          id="premiumChannel"
+          aria-describedby="helpId"
+          placeholder=""
+        />
+
+        <label for="connectionNum" class="form-label">Số kết nối</label>
+        <input
+          type="number"
+          class="form-control col-xl-4 mt-6 col my-3"
+          name=""
+          id="connectionNum"
+          aria-describedby="helpId"
+          placeholder=""
+          style="display: none"
+        />
+
+        <button
+          onclick="getResult()"
+          type="button"
+          class="btn btn-success my-3"
+        >
+          CLICK TO GET!!!
+        </button>
+        <div id="showMess" style="display: none; my-3 ">
+          <p id="showResult"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index2.js "></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
